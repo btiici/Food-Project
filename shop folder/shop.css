@@ -1,0 +1,212 @@
+/* reset */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 16px;
+}
+
+/* typography */
+h1{
+    text-align: center;
+    font-size: 5rem;
+    margin-bottom: 10rem;
+    margin-top: 7rem;
+}
+
+header p{
+    font-size: 30px;
+    font-weight: 900;
+    margin-left: 2rem;
+}
+
+h4{
+    color: rgb(35, 35, 35);
+    font-size: 20px;
+    font-weight: 200;
+}
+
+/* layout */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5rem;
+    padding-top: 2rem;
+    border-bottom: 1px solid black;
+    padding-bottom: 1rem;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    background-color: white;
+}
+
+nav ul li{
+    list-style-type: none;
+    display:inline-block;
+  margin-right: 2rem;  
+}
+
+nav ul a{
+    color: black;
+    text-decoration: none;
+}
+
+nav ul a:hover{
+    text-decoration: underline;
+}
+
+header p a{
+    text-decoration: none;
+    color: black;
+}
+
+.toggle{
+    position: absolute;
+    right: 2rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 20px;
+    display: none;
+}
+
+.bar{
+    background-color: black;
+    border-radius: 10px;
+    width: 100%;
+    height: 3px;
+}
+
+.shop-link{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.shop-link a{
+    color: black;
+    text-decoration: none;
+    font-weight: 50;
+}
+.shop-link a:hover{
+    color: blue;
+}
+
+.shop-pics{
+    text-align: center;
+    width: 482px;
+    margin: auto;
+    transition: 1s;
+}
+
+.shop-pics:hover{
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+.shop-pics div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.shop-pics p{
+    margin-top: 1rem;
+}
+
+.name{
+    font-size: 23px;
+}
+
+.number{
+    font-size: 32px;
+    font-weight: 500;
+}
+
+footer{
+    background-color: rgb(241, 236, 229);
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.media{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding-bottom: 6rem;
+    
+}
+
+.media img{
+    width: 100%;
+}
+
+.media li{
+list-style-type: none;
+}
+
+footer h4{
+    padding-top: 3rem;
+    font-size: 2rem;
+}
+
+.subscription{
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+label{
+    display: block;
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: left;
+    letter-spacing: 1px;
+    margin-bottom: .3rem;
+    font-weight: 100;
+}
+
+input{
+    width: 100%;
+    border: none;
+    padding: 1rem;
+}
+
+form{
+    margin-top: 3rem;
+}
+
+button{
+    margin-top: 2rem;
+    background-color: black;
+    color: white;
+    padding: 1rem 2rem;
+}
+
+button:hover{
+    background-color: aliceblue;
+    color: black;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    h1{
+        font-size: 40px;
+        margin-bottom: 4rem;
+    }
+    .toggle{
+        display: flex;
+    }
+    .toggle:hover{
+        cursor: pointer;
+    }
+    nav{
+        display: none;
+    }
+}
